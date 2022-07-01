@@ -10,7 +10,10 @@ Wrapper for `tl.debug`, `console.log`, `tl.warn` and `tl.error`.
 
 ```typescript
 const logger = getLogger('AzureClient');
+logger.debug('It works!');
 logger.info('It works!');
+logger.warning('It works!');
+logger.error('It works!');
 ```
 
 ## 🔭 Plans
