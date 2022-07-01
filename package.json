@@ -1,0 +1,39 @@
+{
+  "name": "azure-devops-extension-logger",
+  "version": "0.0.0",
+  "description": "Azure DevOps Extension logger",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf './dist'",
+    "compile": "npm run clean && tsc",
+    "fmt": "prettier --write . && eslint --fix .",
+    "lint": "eslint .",
+    "pretest": "npm run clean",
+    "test": "jest . --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/survivorbat/azure-devops-extension-logger.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "homepage": "https://github.com/survivorbat/azure-devops-extension-logger",
+  "author": "survivorbat",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "ts-jest": "^28.0.2",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@types/q": "^1.5.5",
+    "azure-pipelines-task-lib": "^3.3.1"
+  }
+}
